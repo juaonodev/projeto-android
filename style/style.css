@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @font-face {
-    font-family:'android';
+    font-family: 'android';
     src: url('../fontes/idroid.otf') format('opentype');
     font-weight: normal;
 }
@@ -18,7 +18,7 @@
 
     --fonte-padrao: Arial, Verdana, Helvetica, Sans-serif;
     --fonte-destaque: "Bebas Neue", sans-serif;
-    --fonte-android: 'android', sans-serid; 
+    --fonte-android: 'android', sans-serid;
 }
 
 /* o * serve para criar uma configuração gloval sem precisar ter que ficar repetindo caixas.
@@ -32,7 +32,7 @@
 body {
     background-color: var(--cor00);
     font-family: var(--fonte-padrao);
-    margin: 0px;
+
 }
 
 a.externo::after {
@@ -69,22 +69,21 @@ header {
     background-image: linear-gradient(to bottom, var(--cor03), var(--cor05));
     min-height: 150px;
     text-align: center;
-    padding-top: 40px;
-    margin-top: 0px;
 
 }
 
-header > h1 {
+header>h1 {
     color: white;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
     font-family: var(--fonte-destaque);
     font-size: 3em;
+    padding-top: 40px;
     margin-bottom: 0px;
     font-weight: normal;
-    
+
 }
 
-header > p {
+header>p {
     font-family: var(--fonte-destaque);
     font-size: 1.2em;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
@@ -94,8 +93,8 @@ header > p {
     padding-left: 10px;
     padding-bottom: 50px;
     margin: auto;
-    
-    
+
+
 }
 
 nav {
@@ -105,7 +104,7 @@ nav {
     padding-top: 30px;
 }
 
-nav > a {
+nav>a {
     color: var(--cor01);
     padding: 10px;
     text-decoration: none;
@@ -114,7 +113,7 @@ nav > a {
     transition-duration: 0.5;
 }
 
-nav > a:hover {
+nav>a:hover {
     background-color: var(--cor03);
     color: var(--cor05);
 }
@@ -137,10 +136,10 @@ main h1 {
     font-size: 1.8em;
     font-weight: normal;
 
-}   
+}
 
 main h2 {
-    background-image: linear-gradient( to right, var(--cor01), transparent);
+    background-image: linear-gradient(to right, var(--cor01), transparent);
     font-family: var(--fonte-android);
     color: var(--cor04);
     font-size: 1.3em;
@@ -167,9 +166,9 @@ div.video {
     position: relative;
 }
 
-div.video > iframe {
+div.video>iframe {
     position: absolute;
-    top: 5% ;
+    top: 5%;
     left: 5%;
     width: 90%;
     height: 90%;
@@ -183,19 +182,20 @@ aside {
 
 }
 
-aside > ul {
+aside>ul {
     list-style-position: inside;
     columns: 2;
-    list-style-type: '\1F5F8\00a0\00a0'; /*NÃO É COMPATÍVEL COM TODOS OS NAVEGADORES*/
+    list-style-type: '\1F5F8\00a0\00a0';
+    /*NÃO É COMPATÍVEL COM TODOS OS NAVEGADORES*/
 }
 
-aside > h3 {
+aside>h3 {
     background-color: var(--cor04);
     color: white;
     padding: 10px;
     margin: -10px -10px 0px -10px;
     border-radius: 10px 10px 0px 0px;
-    
+
 
 }
 
@@ -205,17 +205,18 @@ footer {
     text-align: center;
     font-size: 0.8em;
     padding: 5px;
-    
+
 
 }
+
 footer a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
-    
+
 }
 
-footer a:hover{
+footer a:hover {
     text-decoration: underline;
     color: var(--cor01);
 }
